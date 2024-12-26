@@ -14,7 +14,7 @@ const BorrowedBooksCard = ({ borrowedBook,borrowedBooks,setBorrowedBooks }) => {
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!"
+        confirmButtonText: "Yes, return it!"
       }).then((result) => {
         if (result.isConfirmed) {
         
@@ -26,8 +26,8 @@ const BorrowedBooksCard = ({ borrowedBook,borrowedBooks,setBorrowedBooks }) => {
             console.log(data);
             if(data.deletedCount > 0){
                 Swal.fire({
-                        title: "Deleted!",
-                        text: "Your Application has been deleted.",
+                        title: "Returned!",
+                        text: "Book Returned Successfully.",
                         icon: "success"
                       });
                       const remaining = borrowedBooks.filter(bBook=>bBook._id!==_id);
