@@ -13,7 +13,7 @@ const BookCategories = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-8">
       <NavLink to="/category/Thriller">
-        <div className="card  shadow-xl">
+        <div className="card bg-blue-100 shadow-xl">
           <div className="card-body">
             <h2 className="card-title ">
             Category 1 <img className="size-10" src={bio} alt="" />
