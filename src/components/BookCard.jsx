@@ -39,7 +39,7 @@ const BookCard = ({ book }) => {
 
         <div className="card-actions ">
           <Link to={`/updateBooks/${_id}`}>
-            <button className="btn ">Update</button>
+            <button className="btn bg-gradient-to-r from-purple-700 to-blue-500 text-white">Update</button>
           </Link>
         </div>
       </div>

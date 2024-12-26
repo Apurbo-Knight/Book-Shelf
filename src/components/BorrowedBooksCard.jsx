@@ -62,7 +62,7 @@ const BorrowedBooksCard = ({ borrowedBook,borrowedBooks,setBorrowedBooks }) => {
         <p>Borrowed Date: {Bdate}</p>
         <p>Return Date:{Rdate} </p>
         <div className="card-actions ">
-          <button onClick={()=>handleDelete(_id)} className="btn ">Return</button>
+          <button onClick={()=>handleDelete(_id)} className="btn bg-gradient-to-r from-purple-700 to-blue-500 text-white">Return</button>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
       .catch((err) => console.log("Logiun Failed"));
   };
   return (
-    <div className="navbar bg-gray-200 mb-4">
+    <div className="navbar bg-gray-200 mb-4 rounded-xl mt-1">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
         <a href="/" className="btn btn-ghost text-xl">
           <img src={logo} alt="" />
-          <h2 className="font-bold text-blue-600">Next Chapter</h2>
+          <h2 className="font-bold bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent">Next Chapter</h2>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -82,16 +82,16 @@ const Navbar = () => {
               alt=""
             />
             <ReactTooltip id="tooltip-0" place="left" content={user?.displayName}></ReactTooltip>
-            <button onClick={handleLogout} className="btn">
+            <button onClick={handleLogout} className="btn bg-gradient-to-r from-purple-700 to-blue-500 text-white">
               Logout
             </button>
           </div>
         ) : (
           <>
-            <button className="btn">
+            <button className="btn bg-gradient-to-r from-purple-700 to-blue-500 text-white">
               <Link to="/register">Register</Link>
             </button>
-            <button className="btn ml-4">
+            <button className="btn ml-4 bg-gradient-to-r from-purple-700 to-blue-500 text-white">
               <Link to="/login">Login</Link>
             </button>
           </>
