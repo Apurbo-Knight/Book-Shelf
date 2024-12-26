@@ -49,7 +49,7 @@ const BorrowedBooksCard = ({ borrowedBook,borrowedBooks,setBorrowedBooks }) => {
         <p>Category: {category}</p>
         <p className="flex items-center gap-1">
                   
-                  Rating:
+                  
                   <ReactStars
                     count={5}
                     value={rating}
