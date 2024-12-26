@@ -26,7 +26,7 @@ const BookCard = ({ book }) => {
         <p>Category: {category}</p>
         <p className="flex items-center gap-1">
           
-          Rating:
+          
           <ReactStars
             count={5}
             value={book.rating}
