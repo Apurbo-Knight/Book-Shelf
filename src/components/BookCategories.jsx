@@ -39,7 +39,7 @@ const BookCategories = () => {
         </div>
       </NavLink>
       <NavLink to="/category/Sci-Fi">
-        <div className="card shadow-xl">
+        <div className="card bg-green-100 shadow-xl">
           <div className="card-body">
             <h2 className="card-title ">
             Category 3 <img className="size-10" src={sci} alt="" />
