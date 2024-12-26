@@ -16,9 +16,9 @@ const BookCard = ({ book }) => {
     email,
   } = book;
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className=" card bg-base-100 shadow-xl">
       <figure>
-        <img src={image} alt="img"/>
+        <img className="max-h-96" src={image} alt="img"/>
       </figure>
       <div className="card-body">
         <h2 className="card-title">Title: {name}</h2>
