@@ -9,7 +9,7 @@ const BookCategories = () => {
   return (
     <div className="w-10/12 mx-auto mt-8">
         <div>
-            <h2 className="font-semibold text-3xl text-center">Book Categories</h2>
+            <h2 className="font-bold text-blue-600 text-3xl text-center">Book Categories</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-8">
       <NavLink to="/category/Thriller">
