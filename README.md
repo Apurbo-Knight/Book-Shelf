@@ -13,3 +13,7 @@
 #  npm packages I have used
 - sweetalert2
 - framer-motion
+- react-toastify
+- lottie-react
+
+# I couldn't practice Milestone-11. I did everything based on the previous milestone.
