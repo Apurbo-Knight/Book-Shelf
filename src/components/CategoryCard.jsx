@@ -37,7 +37,7 @@ const CategoryCard = ({ book }) => {
                   <span>({book.rating}/5)</span>
                 </p>
         <div className="card-actions ">
-          <NavLink to={`/details/${_id}`}><button  className="btn ">Details</button></NavLink>
+          <NavLink to={`/details/${_id}`}><button  className="btn  bg-gradient-to-r from-purple-700 to-blue-500 text-white">Details</button></NavLink>
         </div>
       </div>
     </div>
