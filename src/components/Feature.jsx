@@ -8,7 +8,7 @@ const Feature = () => {
       </h2>
       <div className="flex flex-col md:flex-row justify-center gap-6 px-4">
         {/* Feature 1 */}
-        <div className="bg-white p-4 rounded-lg shadow text-center">
+        <div className="bg-white p-4 hover:bg-slate-200 rounded-lg shadow text-center">
           <div className="text-4xl mb-3">⏱️</div>
           <h3 className="text-xl font-semibold mb-2">Time-Saving</h3>
           <p className="text-gray-600">
@@ -18,7 +18,7 @@ const Feature = () => {
         </div>
 
         {/* Feature 2 */}
-        <div className="bg-white p-4 rounded-lg shadow text-center">
+        <div className="bg-white p-4 hover:bg-slate-200 rounded-lg shadow text-center">
           <div className="text-4xl mb-3">✨</div>
           <h3 className="text-xl font-semibold mb-2">User-Friendly</h3>
           <p className="text-gray-600">
@@ -28,7 +28,7 @@ const Feature = () => {
         </div>
 
         {/* Feature 3 */}
-        <div className="bg-white p-4 rounded-lg shadow text-center">
+        <div className="bg-white p-4 hover:bg-slate-200 rounded-lg shadow text-center">
           <div className="text-4xl mb-3">🔒</div>
           <h3 className="text-xl font-semibold mb-2">Data Security</h3>
           <p className="text-gray-600">
