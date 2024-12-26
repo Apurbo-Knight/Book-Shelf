@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import registerAnimation from "../assets/register.json";
 import AuthContext from "../context/AuthContext";
 import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 const Register = () => {
     const [error, setError] = useState("");
@@ -37,7 +38,7 @@ const Register = () => {
             manageProfile(name, image)
             
               navigate("/")
-            
+            toast("Registration Successfull")
           })
           .catch(err=> console.log(err) )     
     }
@@ -45,6 +46,7 @@ const Register = () => {
       SignInWithGoogle()
       .then(res=>{
           navigate("/")
+          toast("Login Successfull")
       })
   }
   return (

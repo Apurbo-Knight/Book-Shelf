@@ -4,6 +4,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import loginAnimation from "../assets/login.json";
 import AuthContext from "../context/AuthContext";
 import { Helmet } from "react-helmet-async";
+import {toast } from 'react-toastify';
 
 const Login = () => {
   const { loginUser, SignInWithGoogle } = useContext(AuthContext);
@@ -20,6 +21,7 @@ const Login = () => {
     loginUser(email, password)
       .then((res) => {
         console.log(res.user)
+        toast("login done")
         navigate(from);
       })
       .catch((err) => console.log(err));
@@ -28,6 +30,7 @@ const Login = () => {
     SignInWithGoogle()
     .then(res=>{
         navigate(from)
+        toast("login done")
     })
   }
   return (
