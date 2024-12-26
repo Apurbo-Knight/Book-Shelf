@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
         <a href="/" className="btn btn-ghost text-xl">
           <img src={logo} alt="" />
-          <h2>Next Chapter</h2>
+          <h2 className="font-bold text-blue-600">Next Chapter</h2>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
