@@ -32,7 +32,7 @@ const Footer = () => {
           <p>
             <span className="font-bold">Next Chapter</span>
             <br />
-            Providing reliable tech since 1992
+            Providing reliable service since 2000
           </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">
