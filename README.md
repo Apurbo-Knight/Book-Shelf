@@ -3,7 +3,7 @@
 # Purpose of this Project
 - User-Friendly and Time-Saving Library Management System
 # Live Website Link
-- https://zesty-yeot-1e7e19.netlify.app/
+- https://next-chapter.netlify.app/
 #  5 features of your website/project.
 - Login Feature.    
 - Category wise books.
