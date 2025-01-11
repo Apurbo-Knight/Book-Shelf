@@ -14,7 +14,7 @@ const Navbar = () => {
       .catch((err) => console.log("Logiun Failed"));
   };
   return (
-    <div className="navbar fixed top-0 z-10 backdrop-blur-2xl mb-4 rounded-xl ">
+    <div className="navbar fixed top-0 z-10 backdrop-blur-2xl mb-4 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -74,9 +74,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <div className="flex items-center gap-4">
+          <div className="flex items-center rounded-full gap-4">
             <img
-              src={user?.photoURl}
+            className="rounded-full w-12 z-40"
+              src={user?.photoURL}
               alt=""
             />
             <button onClick={handleLogout} className="btn bg-blue-500 text-white">

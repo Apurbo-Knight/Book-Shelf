@@ -30,7 +30,7 @@ const Footer = () => {
         <aside className="grid-flow-col items-center">
           <img src={logo} alt="" />
           <p>
-            <span className="font-bold bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent">Next Chapter</span>
+            <span className="font-bold bg-blue-400 bg-clip-text text-transparent">Next Chapter</span>
             <br />
             Providing reliable service since 2000
           </p>
