@@ -58,11 +58,11 @@ const Details = () => {
       }}
     >
       <Helmet>
-        <title>Next Chapter | Details of {name} </title>
+        <title> Details of {name} | Next Chapter </title>
       </Helmet>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-neutral-content text-center">
-        <div className="max-w-md">
+        <div className="max-w-md space-y-3 font-semibold">
           <h1 className="mb-5 text-5xl font-bold">Title: {name}</h1>
           <p>Author Name: {authorName}</p>
           <p>Category: {category}</p>
@@ -73,7 +73,7 @@ const Details = () => {
           <button
             onClick={() => {document.getElementById("my_modal_5").showModal(); handleBorrow()}}
             disabled={currentQuantity <= 0}
-            className="btn btn-primary"
+            className="btn bg-blue-500"
           >
             Borrow
           </button>

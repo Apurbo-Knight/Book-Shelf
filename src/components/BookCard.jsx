@@ -18,12 +18,12 @@ const BookCard = ({ book }) => {
   return (
     <div className=" card bg-base-100 shadow-xl">
       <figure>
-        <img className="max-h-96" src={image} alt="img"/>
+        <img className="h-96" src={image} alt="img"/>
       </figure>
       <div className="card-body">
         <h2 className="card-title">Title: {name}</h2>
-        <p>Author Name: {authorName}</p>
-        <p>Category: {category}</p>
+        <p><span className="font-semibold">Author Name:</span> {authorName}</p>
+        <p><span className="font-semibold">Category:</span> {category}</p>
         <p className="flex items-center gap-1">
           
           
@@ -39,7 +39,7 @@ const BookCard = ({ book }) => {
 
         <div className="card-actions ">
           <Link to={`/updateBooks/${_id}`}>
-            <button className="btn bg-gradient-to-r from-purple-700 to-blue-500 text-white">Update</button>
+            <button className="btn bg-blue-500 text-white">Update</button>
           </Link>
         </div>
       </div>

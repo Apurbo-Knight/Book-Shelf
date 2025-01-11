@@ -7,7 +7,7 @@ const Category = () => {
   const params = useParams();
   const data = useLoaderData();
   return (
-    <div>
+    <div className="p-20">
       <Helmet>
         <title>Next Chapter | Book Category</title>
       </Helmet>

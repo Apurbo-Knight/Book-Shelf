@@ -12,11 +12,11 @@ const BorrowedBooks = () => {
   const [borrowedBooks, setBorrowedBooks] = useState(presonalBorrowedBooks);
   console.log(borrowedBooks);
   return (
-    <div>
+    <div className="mt-32">
       <Helmet>
         <title>Next Chapter | Borrowed Books</title>
       </Helmet>
-      <h2 className="text-center font-bold text-3xl bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent my-8">
+      <h2 className="text-center font-bold text-3xl text-blue-500 my-8">
          Book Borrowed By - {user?.displayName}
       </h2>
       <div className="lg:w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 p-10">

@@ -64,11 +64,11 @@ const UpdateBooks = () => {
   };
 
   return (
-    <div className="bg-gray-200 w-10/12 mx-auto px-10 rounded-xl my-10">
+    <div className="bg-gray-200 w-10/12 mx-auto px-10 rounded-xl my-36">
       <Helmet>
         <title>Next Chapter | Update Books</title>
       </Helmet>
-      <h2 className="text-center my-5 font-bold text-4xl bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent p-2">
+      <h2 className="text-center my-5 font-bold text-4xl bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent pt-5">
         Update Books:{name}
       </h2>
       <form onSubmit={handleUpdateBooks}>

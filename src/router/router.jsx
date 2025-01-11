@@ -9,7 +9,6 @@ import BorrowedBooks from "../components/BorrowedBooks";
 import Details from "../components/Details";
 import Category from "../components/Category";
 import PrivateRoute from "../components/PrivateRoute";
-import Error from "../components/Error";
 import UpdateBooks from "../components/UpdateBooks";
 
 const router = createBrowserRouter([
@@ -73,10 +72,6 @@ const router = createBrowserRouter([
         },
       ],
       
-    },
-    {
-      path: "*",
-      element: <Error></Error>,
     }
   ]);
 

@@ -53,11 +53,11 @@ const AddBooks = () => {
       });
   };
   return (
-    <div className="bg-gray-200 w-10/12 mx-auto px-10 rounded-xl my-10">
+    <div className="bg-gray-200 w-10/12 mx-auto px-10 rounded-xl my-10 mt-36">
       <Helmet>
         <title>Next Chapter | Add books</title>
       </Helmet>
-      <h2 className="text-center my-5 font-bold text-4xl bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent p-2">
+      <h2 className="text-center my-5 pt-10 font-bold text-4xl text-blue-500 p-2">
         Add Books
       </h2>
       <form onSubmit={handleAddBooks}>

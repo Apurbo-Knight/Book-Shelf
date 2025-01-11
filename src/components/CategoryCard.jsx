@@ -17,16 +17,16 @@ const CategoryCard = ({ book }) => {
   return (
     <div className="card bg-base-100 shadow-xl ">
       <figure>
-        <img src={image} alt="Shoes" />
+        <img className="h-96" src={image} alt="book" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">Title: {name}</h2>
-        <p>Author Name: {authorName}</p>
-        <p>Category: {category}</p>
-        <p>Quantity: {quantity}</p>
+        <p><span className="font-semibold">Author Name:</span> {authorName}</p>
+        <p><span className="font-semibold">Category:</span> {category}</p>
+        <p><span className="font-semibold">Quantity:</span> {quantity}</p>
         <p className="flex items-center gap-1">
                   
-                  Rating:
+                  <span className="font-semibold">Rating:</span>
                   <ReactStars
                     count={5}
                     value={book.rating}
@@ -37,7 +37,7 @@ const CategoryCard = ({ book }) => {
                   <span>({book.rating}/5)</span>
                 </p>
         <div className="card-actions ">
-          <NavLink to={`/details/${_id}`}><button  className="btn  bg-gradient-to-r from-purple-700 to-blue-500 text-white">Details</button></NavLink>
+          <NavLink to={`/details/${_id}`}><button  className="btn  bg-blue-500 text-white">Details</button></NavLink>
         </div>
       </div>
     </div>

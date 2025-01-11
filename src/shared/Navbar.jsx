@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 import logo from "../assets/kids.gif";
-import { Tooltip as ReactTooltip } from "react-tooltip";
+
 
 const Navbar = () => {
   const { user, logoutUser } = useContext(AuthContext);
@@ -14,7 +14,7 @@ const Navbar = () => {
       .catch((err) => console.log("Logiun Failed"));
   };
   return (
-    <div className="navbar bg-gray-200 mb-4 rounded-xl mt-1">
+    <div className="navbar fixed top-0 z-10 backdrop-blur-2xl mb-4 rounded-xl ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,37 +38,37 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <NavLink to="/">Home</NavLink>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <NavLink to="/All Books">All Books</NavLink>
+              <Link to="/All Books">All Books</Link>
             </li>
             <li>
-              <NavLink to="/Add Books">Add Books</NavLink>
+              <Link to="/Add Books">Add Books</Link>
             </li>
             <li>
-              <NavLink to="/Borrowed Books">Borrowed Books</NavLink>
+              <Link to="/Borrowed Books">Borrowed Books</Link>
             </li>
           </ul>
         </div>
         <a href="/" className="btn btn-ghost text-xl">
           <img src={logo} alt="" />
-          <h2 className="font-bold bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent">Next Chapter</h2>
+          <h2 className="font-bold text-blue-400">Next Chapter</h2>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-blue-400">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <Link to="/" className="focus:text-blue-700 font-semibold text-lg">Home</Link>
           </li>
           <li>
-            <NavLink to="/All Books">All Books</NavLink>
+            <Link to="/All Books" className="focus:text-blue-700 font-semibold text-lg">All Books</Link>
           </li>
           <li>
-            <NavLink to="/Add Books">Add Books</NavLink>
+            <Link to="/Add Books" className="focus:text-blue-700 font-semibold text-lg">Add Books</Link>
           </li>
           <li>
-            <NavLink to="/Borrowed Books">Borrowed Books</NavLink>
+            <Link to="/Borrowed Books" className="focus:text-blue-700 font-semibold text-lg">Borrowed Books</Link>
           </li>
         </ul>
       </div>
@@ -76,22 +76,19 @@ const Navbar = () => {
         {user ? (
           <div className="flex items-center gap-4">
             <img
-              data-tooltip-id="tooltip-0"
-              className="rounded-full size-12"
-              src={user?.photoURL}
+              src={user?.photoURl}
               alt=""
             />
-            <ReactTooltip id="tooltip-0" place="left" content={user?.displayName}></ReactTooltip>
-            <button onClick={handleLogout} className="btn bg-gradient-to-r from-purple-700 to-blue-500 text-white">
+            <button onClick={handleLogout} className="btn bg-blue-500 text-white">
               Logout
             </button>
           </div>
         ) : (
           <>
-            <button className="btn bg-gradient-to-r from-purple-700 to-blue-500 text-white">
+            <button className="btn bg-blue-500 text-white">
               <Link to="/register">Register</Link>
             </button>
-            <button className="btn ml-4 bg-gradient-to-r from-purple-700 to-blue-500 text-white">
+            <button className="btn ml-4 bg-blue-500 text-white">
               <Link to="/login">Login</Link>
             </button>
           </>
