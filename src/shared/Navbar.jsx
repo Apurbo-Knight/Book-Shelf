@@ -76,7 +76,7 @@ const Navbar = () => {
         {user ? (
           <div className="flex items-center rounded-full gap-4">
             <img
-            className="rounded-full w-12 z-40"
+            className="rounded-full border-2 border-blue-500 w-12 z-40"
               src={user?.photoURL}
               alt=""
             />
