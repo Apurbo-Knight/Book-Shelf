@@ -21,9 +21,9 @@ const BookCard = ({ book }) => {
         <img className="h-96" src={image} alt="img"/>
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Title: {name}</h2>
-        <p><span className="font-semibold">Author Name:</span> {authorName}</p>
-        <p><span className="font-semibold">Category:</span> {category}</p>
+        <h2 className="card-title">{name}</h2>
+        <p><span className="font-semibold"></span> {authorName}</p>
+        <p><span className="font-semibold"></span> {category}</p>
         <p className="flex items-center gap-1">
           
           
