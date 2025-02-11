@@ -5,7 +5,7 @@ import b2 from "../assets/b2.jpg"
 
 const Banner = () => {
   return (
-    <div className="hero bg-blue-100 my-10">
+    <div className="hero bg-blue-50 my-10">
       <div className="hero-content flex-col xl:gap-96 lg:flex-row-reverse ">
         <div className="flex-1">
           <motion.img

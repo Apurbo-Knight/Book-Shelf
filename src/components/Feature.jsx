@@ -7,7 +7,7 @@ const Feature = () => {
         <h2 className="text-center text-3xl text-blue-500 font-bold pt-4 mb-16">
           Why Choose Our Library Management System
         </h2>
-      <div className="bg-blue-100">
+      <div className="bg-blue-50">
       <div className="  py-10  w-10/12 mx-auto">
         <div className="flex flex-col md:flex-row justify-center gap-6 py-10">
           {/* Feature 1 */}
