@@ -207,7 +207,7 @@ const AddBooks = () => {
         <input
           type="submit"
           value="Add Book"
-          className="btn btn-block my-10 bg-gradient-to-r from-purple-700 to-blue-500 text-white "
+          className="btn btn-block my-10 bg-blue-500 text-white "
         />
       </form>
     </div>
